@@ -1,3 +1,57 @@
-body {
-    background-color: antiquewhite;
+#main-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+}
+
+.weather-box {
+    height: 75%;
+    width: 75%;
+    background-color: white;
+    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: none;
+    padding: 20px 40px;
+}
+
+.location-search {
+    position: relative;
+    display: flex;
+}
+
+.location-search .getWeather {
+    width: 100px;
+}
+
+.location-search input {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 0.5px solid #dddddd80;
+    margin: 10px;
+    width: 80%;
+}
+
+.location-search .dropdown-addreses {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 38px;
+    left: 16px;
+}
+
+.location-search .dd {
+    padding: 3px 5px;
+}
+
+.location-search .dd:hover{
+    background-color: #ebebeb;
+}
+.dropdown-addreses.show {
+    display: block;
 }
