@@ -1,6 +1,6 @@
 export async function getAddresses(address) {
     let response = await fetch(
-        `https://api.kartes.lv/v3/KVDM_QHL5O/search?q=${address}&layers=adrese&fields=name,pop_place,iela,maja,terit_vien,admin_vien,valsts,&limit=4`
+        `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Lokomotives%20iela%2034?unitGroup=us&key=9GWHNNZ3R86XP9D3V2MW5QHVE&contentType=json`
     );
     let addressesObj = await response.json();
     return addressesObj;
