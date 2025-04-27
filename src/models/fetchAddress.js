@@ -10,7 +10,7 @@ export async function updateSelection(div, address) {
     const addressesObj = await getAddresses(address);
     const addressesArr = addressesObj.adrese;
     div.innerHTML = "";
-    if (addressesArr.length > 0 && addressesArr!=undefined){
+    if (addressesArr!=undefined){
         for (address of addressesArr) {
             const selection = document.createElement("div");
             selection.classList.add("dd");

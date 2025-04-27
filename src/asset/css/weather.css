@@ -1,0 +1,43 @@
+.sunny {
+    background-image: url('../images/weather_conditions/sunny.webp');
+    background-size: cover;
+}
+
+.light_rain {
+    background-image: url('../images/weather_conditions/light_rain.webp');
+    background-size: cover;
+}
+
+.hard_rain {
+    background-image: url('../images/weather_conditions/hard_rain.webp');
+    background-size: cover;
+}
+
+.thunderstorm {
+    background-image: url('../images/weather_conditions/thunderstorm.webp');
+    background-size: cover;
+}
+
+.cloudy {
+    background-image: url('../images/weather_conditions/cloudy.webp');
+    background-size: cover;
+}
+
+.clear_night {
+    background-image: url('../images/weather_conditions/clear_night.webp');
+    background-size: cover;
+}
+
+.weatherData {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #c8c8c83a;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 50px;
+}
+
+.weatherData p {
+    font-size: 1.3rem;
+}
