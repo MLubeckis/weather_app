@@ -2,6 +2,7 @@ import "./asset/css/main.css";
 import "./asset/css/mayer_reset.css";
 import { updateSelection } from "./models/fetchAddress";
 import { getWeatherData } from "./models/fetchWeather";
+import { initWeatherCarousel } from "./models/weatherCarousel.js";
 import './models/weatherCarousel.js'
 //import "./asset/css/embla.css"
 console.log("Hello World!");
@@ -25,8 +26,8 @@ document
     });
 
 document.querySelector('.getWeather').addEventListener('click', ()=>{
-    const adress = document.querySelector(".location-search input").value;
-    getWeatherData();
+    const adress = document.querySelector(".location-search input").value || 'Riga, Latvija';
+    initWeatherCarousel(adress);
 })
 
 window.addEventListener("mousedown", (e) => {

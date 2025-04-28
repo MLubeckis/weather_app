@@ -1,6 +1,6 @@
 export async function getAddresses(address) {
     let response = await fetch(
-        `https://api.kartes.lv/v3/KVDM_UVb1L/search?q=${address}&layers=adrese&fields=name,pop_place,iela,maja,terit_vien,admin_vien,valsts,&limit=4`
+        `https://api.kartes.lv/v3/KVDM_jkhSm/search?q=${address}&layers=adrese&fields=name,pop_place,iela,maja,terit_vien,admin_vien,valsts,&limit=4`
     );
     let addressesObj = await response.json();
     return addressesObj;
